@@ -148,3 +148,38 @@ public class Calculator {
     <h2><%= message %></h2>
 </body>
 </html>
+
+
+package com.example;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CalculatorTest {
+
+    Calculator calculator = new Calculator();
+    
+    @org.junit.jupiter.api.Test
+    void add() {
+        assertEquals(8, calculator.add(5, 3));
+    }
+
+    @org.junit.jupiter.api.Test
+    void subtract() {
+        assertEquals(2, calculator.subtract(5, 3));
+    }
+
+    @org.junit.jupiter.api.Test
+    void multiply() {
+        assertEquals(15, calculator.multiply(5, 3));
+    }
+
+    @org.junit.jupiter.api.Test
+    void divide() {
+        assertEquals(2, calculator.divide(6, 3));
+    }
+    
+    @org.junit.jupiter.api.Test
+    void divideByZero() {
+        assertThrows(ArithmeticException.class, () -> calculator.divide(5, 0));
+    }
+}
