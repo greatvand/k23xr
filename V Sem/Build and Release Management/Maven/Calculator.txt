@@ -81,3 +81,70 @@ public class Calculator {
         return a / b;
     }
 }
+
+<%@ page import="com.example.Calculator" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+    <h1>Simple Calculator</h1>
+    <form method="post">
+        <input type="number" name="num1" placeholder="First Number" required>
+        <input type="number" name="num2" placeholder="Second Number" required>
+        <br><br>
+        <input type="submit" name="operation" value="Add">
+        <input type="submit" name="operation" value="Subtract">
+        <input type="submit" name="operation" value="Multiply">
+        <input type="submit" name="operation" value="Divide">
+    </form>
+    <br><br>
+
+    <%
+        String n1 = request.getParameter("num1");
+        String n2 = request.getParameter("num2");
+        String op = request.getParameter("operation");
+        double result = 0;
+        String message = "";
+
+        if (n1 != null && n2 != null && op != null) {
+            try {
+                double num1 = Double.parseDouble(n1);
+                double num2 = Double.parseDouble(n2);
+                Calculator calc = new Calculator();
+
+                switch (op) {
+                    case "Add":
+                        result = calc.add(num1, num2);
+                        message = "Result: " + result;
+                        break;
+                    case "Subtract":
+                        result = calc.subtract(num1, num2);
+                        message = "Result: " + result;
+                        break;
+                    case "Multiply":
+                        result = calc.multiply(num1, num2);
+                        message = "Result: " + result;
+                        break;
+                    case "Divide":
+                        if (num2 != 0) {
+                            result = calc.divide(num1, num2);
+                            message = "Result: " + result;
+                        } else {
+                            message = "Error: Division by zero is not allowed.";
+                        }
+                        break;
+                    default:
+                        message = "Invalid operation.";
+                }
+            } catch (NumberFormatException e) {
+                message = "Error: Invalid number format.";
+            }
+        }
+   %>
+
+    <h2><%= message %></h2>
+</body>
+</html>
