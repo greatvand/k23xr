@@ -1,0 +1,24 @@
+1. Ask ShellGPT to create a bash script that displays system uptime, current user, and disk usage. Run it and screenshot the output.
+
+2. Ask ShellGPT to explain what `chmod +x` does and then use it on your script.
+
+3. Ask ShellGPT to generate a one-liner bash command to list the 5 most recently modified files in `/home/<your_username>`.
+
+4. Use ShellGPT to generate a script that takes a directory path as argument, counts how many `.txt`, `.py`, and `.sh` files are inside, and displays the count in a formatted table. Run and show the output for two different directories.
+
+5. Ask ShellGPT to debug your script after intentionally adding an error (for example, a typo in a variable name). Show before and after corrections.
+
+6. Ask ShellGPT to optimize your script for efficiency and shorter syntax.
+
+7. Use ShellGPT to write a menu-based utility using a `case` statement that offers:
+   1 → Show current date/time
+   2 → Show top 5 processes by CPU usage
+   3 → Show total number of running services
+   4 → Exit
+   Run it once and capture the output.
+
+8. Ask ShellGPT to convert that bash menu into a Python script that performs the same functions.
+
+9. Ask ShellGPT to generate a funny Linux fortune message generator script using `echo` and `shuf`. Customize it to print your name.
+
+10. Ask ShellGPT to combine all your scripts into a single “toolkit.sh” file with a simple text-based interface to access each mini-utility.
