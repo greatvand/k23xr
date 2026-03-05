@@ -1,0 +1,45 @@
+docker run -it hello-world
+docker run -it ubuntu
+docker image pull ubuntu
+docker image ls
+docker image pull python:2
+docker run -d -p 88:80 nginx
+docker container logs id
+docker container ls -as 
+docker container stats
+docker container inspect id
+docker run -it --name ubuntu-test ubuntu
+docker container logs name
+docker rename old new
+docker container stop name (nginx)
+docker container ls
+docker container start name (nginx)
+docker container rm name (stopped container)
+docker container rm $(docker container ps -aq)
+docker run -it --rm --name hello-ubuntu ubuntu
+exit 
+docker container ls -a
+docker run -it --rm --name hello-ubuntu ubuntu
+open new tab
+docker container ls
+docker container stop name
+docker container ls -a
+docker run -it --rm python
+print("test")
+pip install numpy
+docker run -it --rm python bash
+pip install numpy
+python
+import numpy as np
+exit
+exit
+docker run --name my-python -it python
+different terminal
+docker exec -it my-python bash
+pip install numpy
+switch terminal
+import numpy as np
+new terminal
+docker container exec my-python pip install numpy
+
+
