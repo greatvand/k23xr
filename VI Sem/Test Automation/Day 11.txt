@@ -1,0 +1,45 @@
+Install nodejs
+Install jdk
+Install androidstudio
+Create a virtual device
+Launch the emulator
+Use the emulator or pair your android phone
+install Appium inspector
+install Appium server
+install uiautomator2
+
+create a project
+create app->android->paste
+install webdriverio(v9) inside the project
+
+pair phone
+C:\Users\utki_\AppData\Local\Android\Sdk\platform-tools
+adb connect ip:port
+adb devices
+adb -s 192.168.29.240:40967 shell getprop ro.product.model
+
+
+capabilities: [{
+       'appium:platformName': 'Android',
+       'appium:platformVersion': '14.0',
+       'appium:deviceName': 'V2142',
+       'appium:automationName': 'UIAutomator2',
+       'appium:app': 'C:\\LPU\\Test Automation\\Demo\\Project1\\app\\android\\ApiDemos-debug.apk', 
+       'appium:uiautomator2ServerInstallTimeout': 60000,
+       'appium:adbExecTimeout': 60000 
+    }],
+
+
+describe('Sample', () => {
+    it('Sample Test', async () => {
+        await driver.pause(5000);
+    })
+})
+
+Check Claude
+
+ANDROID_HOME
+ANDROID_SDK_ROOT
+C:\Users\utki_\AppData\Local\Android\Sdk
+
+npx wdio
