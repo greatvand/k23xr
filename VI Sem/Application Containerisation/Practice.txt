@@ -1,0 +1,19 @@
+Multi-Stage Docker Build with Docker Compose** Goal: Optimize a containerized application using a multi-stage Dockerfile integrated with Docker Compose.
+
+Kubernetes Persistent Volumes and Persistent Volume Claims** Goal: Configure persistent storage for a stateful application running in Kubernetes.
+
+Docker Compose Health Checks and Restart Policies** Goal: Implement health checks and restart policies for services in Docker Compose.
+
+Kubernetes Horizontal Pod Autoscaler (HPA)** Goal: Automatically scale a Deployment based on CPU utilization using HPA. 
+
+Docker Compose with Reverse Proxy** Goal: Set up a multi-container application using Docker Compose with Nginx as a reverse proxy.
+
+Kubernetes Secrets Management** Goal: Use Kubernetes Secrets to securely store and inject sensitive data into a container.
+
+Kubernetes ConfigMaps** Goal: Use a ConfigMap to store non-sensitive configuration for a container. 
+
+Docker Compose for a Simple Microservice Setup** Goal: Run at least two microservices (web + DB) using Docker Compose, focusing on secure defaults. 
+
+Rolling Updates and Rollbacks in Kubernetes** Goal: Update a Deployment to a new container image version, then roll it back if needed.
+
+Securing a Multi-Container Application with Docker Compose** Goal: Use Docker Compose to orchestrate a small web + database setup, with basic security considerations.

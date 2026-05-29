@@ -1,0 +1,19 @@
+Run Selenium tests in parallel on at least two browsers (Chrome + Firefox). 
+
+Form Submission with File Upload Task:** Automate a scenario where the web app allows file uploads
+
+ Integration with Cloud CI/CD (AWS or Azure) Task:** Host your test code in a repository, set up a pipeline on AWS CodePipeline or Azure DevOps. 
+
+User Registration + Form Validation Task:** Write Selenium tests for a user registration page that has client-side or server-side validation.
+
+Handling Failed Tests with Notifications Task:** In your CI/CD pipeline, send notifications (e.g., email or Slack) if Selenium tests fail.
+
+Testing on Multiple Browsers in CI Task:** Validate cross-browser compatibility (e.g., Chrome + Firefox) in a pipeline.
+
+Containerized Test Execution Task:** Dockerize your Selenium test environment and run it in a CI/CD pipeline. 
+
+Login + Logout Flow in Parallel Task:** Create two Selenium test classes: one for verifying login, another for logout. Run them in parallel within a pipeline.
+
+Data-Driven Testing (Selenium + Pipeline) Task:** Read test data (e.g., from CSV or JSON) to drive multiple test scenarios in Selenium.
+
+Locators and Form Automation with Reporting Task:** Automate a multi-field form on a sample web application, generating a test report. 
